@@ -1,3 +1,5 @@
+import HomePage from "./sections/main/page";
+
 export default function Home() {
-  return <h1>Hello Swopnil !!!</h1>;
+  return <HomePage />;
 }
