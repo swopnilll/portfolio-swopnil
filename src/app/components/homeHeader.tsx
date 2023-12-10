@@ -12,6 +12,15 @@ const HomeHeader = () => {
           height={50}
         />
       </div>
+
+      <div className="text-box">
+        <h1 className="heading-primary">
+          <div className="heading-primary-main">Swopnil Acharya</div>
+          <div className="heading-primary-sub">
+            Blending Engineering Expertise with an Entrepreneurial Mindset
+          </div>
+        </h1>
+      </div>
     </div>
   );
 };

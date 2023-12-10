@@ -27,8 +27,71 @@ body {
   position: relative;
 }
 
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+}
+
 .logo-wrapper {
   position: absolute;
   top: 40px;
   left: 40px;
+}
+
+.heading-primary {
+  color: #fff;
+}
+
+.heading-primary-main {
+  font-size: 60px;
+  font-weight: 400;
+  animation: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  backface-visibility: hidden;
+}
+
+.heading-primary-sub {
+  font-size: 20px;
+  font-weight: 400;
+  animation: moveInRight;
+  animation-duration: 2s;
+  backface-visibility: hidden;
+}
+
+@keyframes moveInLeft {
+  /* State before an animation starts */
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  /* State when animation completes */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  /* State before an animation starts */
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+  }
+
+  /* State when animation completes */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
